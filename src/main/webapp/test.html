@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script>
+	$(function(){
+		
+		$(".d1").click(function(){
+			$("#show").html($(this).text());
+		});
+	});
+	function f1(btn){
+		$("#show").html($(btn).text());
+	}
+</script>
+</head>
+<body>
+	<div class="d1">hello</div>
+	<div class="d1">nihao</div>
+	<div class="d1">zai ganma</div>
+	<ul>
+		<li class="d2" onclick="f1(this);"><a >哈哈</a></li>
+		<li class="d2" onclick="f1(this);">萨比</li>
+		<li class="d2">在干嘛</li>
+	</ul>
+	<div id="show"></div>
+</body>
+</html>
